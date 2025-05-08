@@ -19,6 +19,7 @@
 
 package com.arthenica.ffmpegkit;
 
+import android.annotation.SuppressLint;
 import android.content.ContentProvider;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -967,6 +968,7 @@ public class FFmpegKitConfig {
      * @param openMode file mode to use as defined in {@link ContentProvider#openFile ContentProvider.openFile}
      * @return input/output url that can be passed to FFmpegKit or FFprobeKit
      */
+    @SuppressLint("Range")
     public static String getSafParameter(final Context context, final Uri uri, final String openMode) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             android.util.Log.i(TAG, String.format("getSafParameter is not supported on API Level %d", Build.VERSION.SDK_INT));
