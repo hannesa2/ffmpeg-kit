@@ -1,4 +1,8 @@
-apply plugin: 'com.android.library'
+plugins {
+    id "com.android.library"
+//    id "kotlin-android"
+    id "maven-publish"
+}
 
 android {
     namespace 'com.arthenica.ffmpegkit'
@@ -57,4 +61,14 @@ dependencies {
 
 if (System.properties.containsKey('releaseFFmpegKit')) {
     apply from: "${rootProject.projectDir}/../tools/android/release.template.gradle"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.findByName('release')
+            }
+        }
+    }
 }
