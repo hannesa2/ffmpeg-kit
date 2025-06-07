@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.10.0" type="incidents">
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of Gradle than 8.13 is available: 8.14.2">
+        <fix-replace
+            description="Update to 8.14.2"
+            oldString="8.13"
+            replacement="8.14.2"
+            priority="0"/>
+        <location
+            file="$HOME/git/ffmpeg-kit/android/gradle/wrapper/gradle-wrapper.properties"
+            line="3"
+            column="17"
+            startOffset="81"
+            endLine="3"
+            endColumn="79"
+            endOffset="143"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of org.json:json than 20220320 is available: 20230227">
+        <fix-replace
+            description="Change to 20230227"
+            family="Update versions"
+            oldString="20220320"
+            replacement="20230227"
+            priority="0"/>
+        <location
+            file="${:ffmpeg-kit-android-lib*projectDir}/build.gradle"
+            line="59"
+            column="24"
+            startOffset="1515"
+            endLine="59"
+            endColumn="48"
+            endOffset="1539"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 24">
+        <fix-data conditional="true"/>
+        <location
+            file="${:ffmpeg-kit-android-lib*debug*MAIN*sourceProvider*0*javaDir*0}/com/arthenica/ffmpegkit/CameraSupport.java"
+            line="52"
+            column="13"
+            startOffset="1820"
+            endLine="52"
+            endColumn="59"
+            endOffset="1866"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 24">
+        <fix-data conditional="true"/>
+        <location
+            file="${:ffmpeg-kit-android-lib*debug*MAIN*sourceProvider*0*javaDir*0}/com/arthenica/ffmpegkit/FFmpegKitConfig.java"
+            line="551"
+            column="13"
+            startOffset="22161"
+            endLine="551"
+            endColumn="59"
+            endOffset="22207"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is never &lt; 24">
+        <fix-data conditional="false"/>
+        <location
+            file="${:ffmpeg-kit-android-lib*debug*MAIN*sourceProvider*0*javaDir*0}/com/arthenica/ffmpegkit/FFmpegKitConfig.java"
+            line="973"
+            column="13"
+            startOffset="40602"
+            endLine="973"
+            endColumn="63"
+            endOffset="40652"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is never &lt; 24">
+        <fix-data conditional="false"/>
+        <location
+            file="${:ffmpeg-kit-android-lib*debug*MAIN*sourceProvider*0*javaDir*0}/com/arthenica/ffmpegkit/NativeLoader.java"
+            line="137"
+            column="13"
+            startOffset="3966"
+            endLine="137"
+            endColumn="65"
+            endOffset="4018"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 24">
+        <fix-data conditional="true"/>
+        <location
+            file="${:ffmpeg-kit-android-lib*debug*MAIN*sourceProvider*0*javaDir*0}/com/arthenica/ffmpegkit/NativeLoader.java"
+            line="206"
+            column="13"
+            startOffset="6670"
+            endLine="206"
+            endColumn="66"
+            endOffset="6723"/>
+    </incident>
+
+</incidents>

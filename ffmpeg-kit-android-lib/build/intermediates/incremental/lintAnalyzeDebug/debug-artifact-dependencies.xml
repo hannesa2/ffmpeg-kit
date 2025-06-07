@@ -1,0 +1,20 @@
+<dependencies>
+  <compile
+      roots="com.arthenica:smart-exception-java:0.2.1@jar,com.arthenica:smart-exception-common:0.2.1@jar">
+    <dependency
+        name="com.arthenica:smart-exception-java:0.2.1@jar"
+        simpleName="com.arthenica:smart-exception-java"/>
+    <dependency
+        name="com.arthenica:smart-exception-common:0.2.1@jar"
+        simpleName="com.arthenica:smart-exception-common"/>
+  </compile>
+  <package
+      roots="com.arthenica:smart-exception-java:0.2.1@jar,com.arthenica:smart-exception-common:0.2.1@jar">
+    <dependency
+        name="com.arthenica:smart-exception-java:0.2.1@jar"
+        simpleName="com.arthenica:smart-exception-java"/>
+    <dependency
+        name="com.arthenica:smart-exception-common:0.2.1@jar"
+        simpleName="com.arthenica:smart-exception-common"/>
+  </package>
+</dependencies>

@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/hannes/git/ffmpeg-kit/android/ffmpeg-kit-android-lib"
+    name=":ffmpeg-kit-android-lib"
+    type="LIBRARY"
+    maven="ffmpeg-kit-android:ffmpeg-kit-android-lib:unspecified"
+    agpVersion="8.10.0"
+    buildFolder="build"
+    bootClassPath="/Users/hannes/Library/Android/sdk/platforms/android-35/android.jar:/Users/hannes/Library/Android/sdk/build-tools/35.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>
