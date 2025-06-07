@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.arthenica.ffmpegkit'
+    namespace "com.arthenica.ffmpegkit"
     compileSdk 35
     ndkVersion "22.1.7171670"
 
@@ -21,7 +21,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }
 
@@ -39,13 +39,13 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
         unitTests.all {
-            systemProperty 'enable.ffmpeg.kit.test.mode', 'true'
+            systemProperty "enable.ffmpeg.kit.test.mode", "true"
         }
     }
 }
 
-tasks.register('javadoc', Javadoc) {
-    title = 'FFmpegKit'
+tasks.register("javadoc", Javadoc) {
+    title = "FFmpegKit"
     destinationDir = file("${projectDir}/../../docs/android/javadoc")
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
     source = android.sourceSets.main.java.srcDirs
@@ -54,12 +54,12 @@ tasks.register('javadoc', Javadoc) {
 }
 
 dependencies {
-    implementation 'com.arthenica:smart-exception-java:0.2.1'
+    implementation "com.arthenica:smart-exception-java:0.2.1"
     testImplementation "androidx.test.ext:junit:1.2.1"
-    testImplementation 'org.json:json:20220320'
+    testImplementation "org.json:json:20220320"
 }
 
-if (System.properties.containsKey('releaseFFmpegKit')) {
+if (System.properties.containsKey("releaseFFmpegKit")) {
     apply from: "${rootProject.projectDir}/../tools/android/release.template.gradle"
 }
 
@@ -67,7 +67,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.findByName('release')
+                from components.findByName("release")
             }
         }
     }
