@@ -11,7 +11,7 @@ updates:
     schedule:
       interval: "daily"
   - package-ecosystem: "github-actions"
-    directory: "/" # Location of package manifests
+    directory: "/android" # Location of package manifests
     target-branch: "main"
     schedule:
       interval: "weekly"
