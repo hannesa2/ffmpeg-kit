@@ -1,0 +1,26 @@
+<dependencies>
+  <compile
+      roots=":@@:ffmpeg-kit-android-lib::debug,com.arthenica:smart-exception-java:0.2.1@jar,com.arthenica:smart-exception-common:0.2.1@jar">
+    <dependency
+        name=":@@:ffmpeg-kit-android-lib::debug"
+        simpleName="ffmpeg-kit-android:ffmpeg-kit-android-lib"/>
+    <dependency
+        name="com.arthenica:smart-exception-java:0.2.1@jar"
+        simpleName="com.arthenica:smart-exception-java"/>
+    <dependency
+        name="com.arthenica:smart-exception-common:0.2.1@jar"
+        simpleName="com.arthenica:smart-exception-common"/>
+  </compile>
+  <package
+      roots=":@@:ffmpeg-kit-android-lib::debug,com.arthenica:smart-exception-java:0.2.1@jar,com.arthenica:smart-exception-common:0.2.1@jar">
+    <dependency
+        name=":@@:ffmpeg-kit-android-lib::debug"
+        simpleName="ffmpeg-kit-android:ffmpeg-kit-android-lib"/>
+    <dependency
+        name="com.arthenica:smart-exception-java:0.2.1@jar"
+        simpleName="com.arthenica:smart-exception-java"/>
+    <dependency
+        name="com.arthenica:smart-exception-common:0.2.1@jar"
+        simpleName="com.arthenica:smart-exception-common"/>
+  </package>
+</dependencies>

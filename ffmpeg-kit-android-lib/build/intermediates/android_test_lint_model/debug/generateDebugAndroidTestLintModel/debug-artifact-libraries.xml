@@ -1,0 +1,23 @@
+<libraries>
+  <library
+      name=":@@:ffmpeg-kit-android-lib::debug"
+      jars="/Users/hannes/.gradle/caches/8.13/transforms/fc6fb04795284b923aa73f7e705e1f6a/transformed/out/jars/classes.jar:/Users/hannes/.gradle/caches/8.13/transforms/fc6fb04795284b923aa73f7e705e1f6a/transformed/out/jars/libs/R.jar"
+      resolved="ffmpeg-kit-android:ffmpeg-kit-android-lib:unspecified"
+      folder="/Users/hannes/.gradle/caches/8.13/transforms/fc6fb04795284b923aa73f7e705e1f6a/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.arthenica:smart-exception-java:0.2.1@jar"
+      jars="/Users/hannes/.gradle/caches/modules-2/files-2.1/com.arthenica/smart-exception-java/0.2.1/2c680aa8cf7ef84fa63cb6c7c1fa4a1fe1359821/smart-exception-java-0.2.1.jar"
+      resolved="com.arthenica:smart-exception-java:0.2.1"/>
+  <library
+      name="com.arthenica:smart-exception-common:0.2.1@jar"
+      jars="/Users/hannes/.gradle/caches/modules-2/files-2.1/com.arthenica/smart-exception-common/0.2.1/b8c705037c485302d1f331bc30e7b72f9642b0e1/smart-exception-common-0.2.1.jar"
+      resolved="com.arthenica:smart-exception-common:0.2.1"/>
+</libraries>
