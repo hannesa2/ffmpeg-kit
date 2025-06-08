@@ -1,5 +1,6 @@
 jdk:
   - openjdk17
 install:
+  - find  ~ -name ndk-build 2>/dev/null
   - cd android && ./gradlew :ffmpeg-kit-android-lib:build :ffmpeg-kit-android-lib:publishToMavenLocal -x :ffmpeg-kit-android-lib:test
   - find . -name "*.aar"
